@@ -146,6 +146,8 @@ CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://*",
     "https://*",
+    "https://theater.up.railway.app/*",
+    "http://theater.up.railway.app/*"
 ]
 CORS_ALLOW_METHODS = [
     'DELETE',
