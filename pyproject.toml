@@ -16,6 +16,7 @@ apscheduler = "^3.10.4"
 django-apscheduler = "^0.6.2"
 qrcode = "^7.4.2"
 gunicorn = "^22.0.0"
+whitenoise = "^6.6.0"
 
 
 [build-system]
