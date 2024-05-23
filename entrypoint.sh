@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export DJANGO_SETTINGS_MODULE=core.settings
+export DJANGO_SETTINGS_MODULE=theater.settings
 
 python manage.py collectstatic --noinput
 
