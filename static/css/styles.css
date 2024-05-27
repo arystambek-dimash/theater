@@ -1,15 +1,26 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative; /* Ensure the body is positioned relatively */
+    z-index: 0; /* Ensure it stays behind the content */
 }
 
-body {
-    background-color: #f7f7f5;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
+body::before {
+    content: "";
+    position: fixed; /* Fixed to make it stick with the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/photo_2024-05-27_08-39-21.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    filter: brightness(50%); /* Adjust the percentage to darken the image */
+    z-index: -1; /* Ensure it stays behind the content */
 }
 
 h1 {
@@ -40,7 +51,7 @@ header h1 {
 .navbar a {
     text-decoration: none;
     font-family: Graphik, sans-serif;
-    color: black;
+    color: #ffffff;
     font-size: 18px;
     line-height: 26px;
 }
@@ -215,7 +226,7 @@ footer {
     padding: 15px 40px;
     font-size: 12px;
     margin-top: auto;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     border-top: 1px solid #e0e0e0;
 }
 

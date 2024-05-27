@@ -8,6 +8,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 400px;
         }
 
         .ticket-card {
@@ -82,9 +83,6 @@
     </style>
 
     <div class="container mt-5">
-        <div style="display: flex; justify-content: center;align-items: center; margin-top: 50px">
-            <h1>My tickets</h1>
-        </div>
         <h2 class="text-center mb-4"></h2>
         <div class="ticket-container">
             {% for ticket in tickets %}
